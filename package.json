@@ -1,7 +1,7 @@
 {
-  "name": "template",
+  "name": "Weather-App",
   "version": "1.0.0",
-  "description": " Weather-App ",
+  "description": "Weather-App ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/LOSTinUNIVERSE/Weather-App/issues"
   },
-  "homepage": "https://lostinuniverse.github.io/Weather-App",
+  "homepage": "https://github.com/LOSTinUNIVERSE/Weather-App#readme",
   "devDependencies": {
     "eslint": "^8.36.0",
     "eslint-config-airbnb-base": "^15.0.0",
