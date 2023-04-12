@@ -8,6 +8,7 @@ const dataFromApi = (() => {
         domElements.text.textContent = `${neededInfo.condition.text}`
         domElements.feelsLike.textContent = `feels like: ${neededInfo.feelsLike}`
         domElements.wind.textContent = `wind speed: ${neededInfo.wind}`
+        domElements.humidity.textContent = `humidity : ${neededInfo.humidity}%`
     }
 
     const getNeededInfo = (data) => {
@@ -23,16 +24,18 @@ const dataFromApi = (() => {
         neededInfo.location = {}
         neededInfo.location.country = locationOfData.country
         neededInfo.location.name = locationOfData.name
+        neededInfo.humidity = currentOfData.humidity
         console.log(neededInfo);
         populatePage()
         // return neededInfo
     }
 
     async function getData(location) {
-        const data = await fetch(`https:api.weatherapi.com/v1/current.json?key=fde9d000471240ee9d472224231104&q=${location}`, { mode: 'cors' })
-        convertedData = await data.json()
-        getNeededInfo(await convertedData)
-        return convertedData
+        try {
+            const data = await fetch(`https:api.weatherapi.com/v1/current.json?key=fde9d000471240ee9d472224231104&q=${location}`, { mode: 'cors' })
+            convertedData = await data.json()
+            getNeededInfo(await convertedData)
+        } catch { console.log('error'); }
     }
     return { getData, getNeededInfo, neededInfo }
 
