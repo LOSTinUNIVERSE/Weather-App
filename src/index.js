@@ -6,9 +6,10 @@ const dataFromApi = (() => {
     function populatePage() {
         domElements.location.textContent = `${neededInfo.location.country}, ${neededInfo.location.name}`
         domElements.text.textContent = `${neededInfo.condition.text}`
-        domElements.feelsLike.textContent = `feels like: ${neededInfo.feelsLike}`
+        domElements.feelsLike.textContent = `feels like: ${neededInfo.feelsLike} C`
         domElements.wind.textContent = `wind speed: ${neededInfo.wind}`
         domElements.humidity.textContent = `humidity : ${neededInfo.humidity}%`
+        domElements.icon.src = neededInfo.condition.icon
     }
 
     const getNeededInfo = (data) => {
