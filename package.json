@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/LOSTinUNIVERSE/Weather-App/issues"
   },
-  "homepage": "https://github.com/LOSTinUNIVERSE/Weather-App#readme",
+  "homepage": "https://lostinuniverse.github.io/Weather-App/",
   "devDependencies": {
     "eslint": "^8.36.0",
     "eslint-config-airbnb-base": "^15.0.0",
