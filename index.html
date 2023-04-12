@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather-app</title>
+    <link rel="stylesheet" href="../src/style.css" />
     <script src="./main.js" defer></script>
   </head>
   <body>
@@ -14,10 +15,12 @@
         <button id="submitBtn">Submit</button>
       </form>
       <div id="info">
-        <div id="location"></div>
         <div id="condition">
-          <div id="text"></div>
-          <div id="icon"></div>
+          <div id="location"></div>
+          <div>
+            <div id="text"></div>
+            <img src="#" id="icon" alt=" weather image" />
+          </div>
         </div>
         <div id="temperature">
           <p id="humidity"></p>
