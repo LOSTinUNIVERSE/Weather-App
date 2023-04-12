@@ -43,6 +43,7 @@ const dataFromApi = (() => {
 })()
 function triggerGetData(event) {
     dataFromApi.getData(domElements.inputLocation.value)
+    document.getElementById('icon').style.display = 'block'
     event.preventDefault()
 }
 domElements.submitBtn.addEventListener('click', triggerGetData, false)

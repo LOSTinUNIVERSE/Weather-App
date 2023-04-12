@@ -90,3 +90,6 @@ button:hover {
   margin: 10px;
   height: 50px;
 }
+#container img {
+  display: none;
+}
