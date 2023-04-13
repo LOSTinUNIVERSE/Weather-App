@@ -34,7 +34,7 @@ const dataFromApi = (() => {
 
     async function getData(location) {
         try {
-            const data = await fetch(`https:api.weatherapi.com/v1/current.json?key=fde9d000471240ee9d472224231104&q=${location}`, { mode: 'cors' })
+            const data = await fetch(`https://api.weatherapi.com/v1/current.json?key=fde9d000471240ee9d472224231104&q=${location}`, { mode: 'cors' })
             convertedData = await data.json()
             getNeededInfo(await convertedData)
         } catch { console.log('error'); }
