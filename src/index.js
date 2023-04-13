@@ -1,4 +1,5 @@
 import domElements from './domElements'
+import './style.css'
 
 const dataFromApi = (() => {
     let convertedData = ''
